@@ -1,0 +1,186 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/what-the-hex.png");
+    position: relative;
+}
+
+h1, h2 {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    font-size: 24px;
+    margin: 0 auto;
+    font-weight: bolder;
+}
+
+h1, .navBar a {
+    color: #ffffff;
+    text-align: center;
+}
+
+h2 {
+    color: #4aaaa5;
+}
+
+header {
+    position: relative;
+    height: 100%;
+    padding: 9%;
+}
+
+.topBar {
+    background-color: #ffffff;
+    margin: auto;
+    width: 960px;
+    height: 75px;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+}
+
+.proName, .navFiller, .navBar {
+    box-sizing: border-box;
+    height: 100%;
+    text-align: center;
+}
+
+.proName {
+    width: 30%;
+    background-color: #4aaaa5;
+}
+
+.navFiller {
+    width: 40%;
+}
+
+.navBar {
+    width: 32%;
+    margin: 0px -10px;
+    padding: 30px 0px 0px 60px;
+    background-color: #ffffff;
+    overflow: hidden;
+  }
+  
+.navBar a {
+    border-right: 2px solid #dddddd;
+}
+
+/* 
+
+I can't get this to work ...
+
+.navBar a:last-child {
+    border-right: 0px #ffffff;
+} */
+
+  .navBar a {
+    width: 32%;
+    float: left;
+    color: #777777;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 auto;
+  }
+  
+  .navBar a:hover {
+    background-color: #dddddd;
+    color: black;
+  }
+  
+  .navBar a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+hr {
+    color: #dddddd;
+    background-color: #dddddd;
+    border: none;
+    height: 2px;
+    margin: 20px 30px;
+    padding: ;
+}
+
+.section1 {
+    margin: 50px auto;
+    width: 960px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+}
+
+.sectionBottom1 {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    padding: 30px 10px 0px 30px;
+}
+
+.textBlock1 {
+    overflow: hidden;
+}
+
+p {
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+    padding: 0px 0px 10px 30px;
+    color: #777777;
+
+}
+
+.siteTop {
+    width: 100%;
+    height: 75px;
+    background-color: #ffffff;
+    border-bottom: solid 2px #dddddd;
+    position: fixed;
+}
+
+.siteBottom {
+    width: 100%;
+    height: 40px;
+    background-color: #666666;
+    color: #ffffff;
+    border-top: solid 8px #4aaaa5;
+    text-align: center;
+    font-size: 10px;
+    bottom: 0;
+    position: fixed;
+}
+
+.footerText {
+    position: relative;
+    bottom: -25px;
+}
+
+
+
+/* Begin Portfolio  */
+
+.portfolioImage {
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+}
+
+.portfolioTitle {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    margin: 0 auto;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+    width: 350px;
+    height: 300px;
+}
+
+/* Begin Contact Form  */
+
+.formBox {
+    margin: 0 auto;
+}
+
+.formInput {
+    width: 920px;
+}
