@@ -1,7 +1,7 @@
 <!-- the least complete of the three, ran out of time before I could figure out how to float the img correctly -->
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,49 +13,71 @@
 <body>
 
     <div class="siteTop"></div>
-
-        <div class="topBar">
-            <div class="proName">
-                <header>
-                    <h1>Kurtis Santillanes</h1>
-                </header>
+    <div class="topBar">
+        <div class="row">
+            <div class="col-4">
+                <div class="proName">
+                    <header class="headerPad">
+                        <h1>Kurtis Santillanes</h1>
+                    </header>
+                </div>
             </div>
-            <div class="navFiller"></div>
-            <div class="navBar">
-                <ul>    
-                <li><a href="index.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                </ul>
+            <div class="col-8 right">
+                <div class="navBar">
+                    <ul>    
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
+    </div>
 
-        <div class="section1">
-            <section>
-                <h2>Portfolio</h2>
-                <hr>
-                <div class="sectionBottom1">
-                    <div class="portfolioImage">
-                        <img class="portfolioTitle" src="../Basic-Portfolio/assets/images/business1.jpg" alt="biz1">
-                    </div>
-                    <div class="portfolioImage">
-                            <img class="portfolioTitle" src="../Basic-Portfolio/assets/images/business1.jpg" alt="biz1">
-                    </div>
-                    <div class="portfolioImage">
-                            <img class="portfolioTitle" src="../Basic-Portfolio/assets/images/business1.jpg" alt="biz1">
-                    </div>
-                    <div class="portfolioImage">
-                            <img class="portfolioTitle" src="../Basic-Portfolio/assets/images/business1.jpg" alt="biz1">
+    <div class="row section1">
+        <section>
+            <h2>Portfolio</h2>
+            <hr>
+            <div class="sectionBottom1">
+                <div class="portfolioContainer">
+                    <img src="assets/images/business1.jpg" alt="biz1" class="portfolioImage">
+                    <div class="portfolioOverlay">
+                        <div class="portfolioText">It's biz-</div>
                     </div>
                 </div>
-            </section>
-        </div>
+                <div class="portfolioContainer">
+                    <img src="assets/images/business2.jpg" alt="biz2" class="portfolioImage">
+                    <div class="portfolioOverlay">
+                        <div class="portfolioText">ness...-</div>
+                    </div>
+                </div>
+                <div class="portfolioContainer">
+                    <img src="assets/images/business3.jpg" alt="biz3" class="portfolioImage">
+                    <div class="portfolioOverlay">
+                        <div class="portfolioText">It's biz-</div>
+                    </div>
+                </div>
+                <div class="portfolioContainer">
+                    <img src="assets/images/business4.jpg" alt="biz4" class="portfolioImage">
+                    <div class="portfolioOverlay">
+                        <div class="portfolioText">ness...-</div>
+                    </div>
+                </div>
+                <div class="portfolioContainer">
+                    <img src="assets/images/business5.jpg" alt="biz5" class="portfolioImage">
+                    <div class="portfolioOverlay">
+                        <div class="portfolioText">TIME!!!-</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
-        <div class="siteBottom">
-            <footer class="footerText">
-                Copyright &copy;
-            </footer>
-        </div>
+    <div class="siteBottom">
+        <footer class="footerText">
+            Copyright &copy;
+        </footer>
+    </div>
 
 </body>
 </html>

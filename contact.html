@@ -1,7 +1,7 @@
 <!-- this one accomplishes the task, but leaves much to be desired in the realm of formatting -->
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,47 +13,51 @@
 <body>
 
     <div class="siteTop"></div>
-
-        <div class="topBar">
-            <div class="proName">
-                <header>
-                    <h1>Kurtis Santillanes</h1>
-                </header>
-            </div>
-            <div class="navFiller"></div>
-            <div class="navBar">
-                <ul>    
-                <li><a href="index.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="section1">
-            <section>
-                <h2>Contact</h2>
-                <hr>
-                <div class="sectionBottom1">
-                    <form class="formBox">
-                        Name<br>
-                        <input class="formInput" type="text" name="name"><br>
-                        Email<br>
-                        <input class="formInput" type="text" name="email"><br>
-                        Message<br>
-                        <textarea class="formInput"></textarea>
-                        <br><br>
-                        <input type="button" name="submit" value="Submit">
-                    </form>
+    <div class="topBar">
+        <div class="row">
+            <div class="col-4">
+                <div class="proName">
+                    <header class="headerPad">
+                        <h1>Kurtis Santillanes</h1>
+                    </header>
                 </div>
-            </section>
+            </div>
+            <div class="col-8 right">
+                <div class="navBar">
+                    <ul>    
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
+    </div>
 
-        <div class="siteBottom">
-            <footer class="footerText">
-                Copyright &copy;
-            </footer>
-        </div>
+    <div class="row section1">
+        <section>
+            <h2>Contact</h2>
+            <hr>
+            <div class="sectionBottom1">
+                <form class="formBox">
+                    Name<br>
+                    <input class="formInput" type="text" name="name" placeholder=" John Snow"><br><br><br>
+                    Email<br>
+                    <input class="formInput" type="text" name="email" placeholder=" kingofthenorth@ravenmail.com"><br><br><br>
+                    Message<br>
+                    <textarea class="formInput formMsg" placeholder=" Winter is coming ... tell us how you are feeling"></textarea>
+                    <br><br>
+                    <input class="buttonFill" type="button" name="submit" value="Submit" row=30>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <div class="siteBottom">
+        <footer class="footerText">
+            Copyright &copy;
+        </footer>
+    </div>
 
 </body>
 </html>

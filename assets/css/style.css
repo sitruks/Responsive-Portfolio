@@ -1,3 +1,39 @@
+/* MEDIA QUERIES */
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%}
+.colFiller-4 {width: 33.33%}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%}
+
+@media only screen and (max-width: 640px) {
+  /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+    [class*="colFiller-"] {
+        width: 100%;
+        height: 0%;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+
+}
+
+
+/* GLOBAL-ish CSS */
+
 body{
     width: 100%;
     height: 100%;
@@ -7,7 +43,7 @@ body{
 
 h1, h2 {
     font-family: 'Georgia', Times, 'Times New Roman', serif;
-    font-size: 24px;
+    font-size: 20px;
     margin: 0 auto;
     font-weight: bolder;
 }
@@ -21,100 +57,104 @@ h2 {
     color: #4aaaa5;
 }
 
-header {
-    position: relative;
-    height: 100%;
-    padding: 9%;
+/* NAVBAR ELEMENTS */
+
+.siteTop {
+    width: 100%;
+    height: 75px;
+    background-color: #ffffff;
+    border-bottom: solid 2px #dddddd;
+    position: absolute;
 }
 
 .topBar {
     background-color: #ffffff;
-    margin: auto;
-    width: 960px;
+    margin-left: 10px;
+    width: 640px;
     height: 75px;
     position: relative;
-    display: flex;
-    align-items: stretch;
 }
 
-.proName, .navFiller, .navBar {
-    box-sizing: border-box;
+.row {
+    width: 100%;
     height: 100%;
-    text-align: center;
 }
 
+[class*="col-"] {
+    float: left;
+}
+  
 .proName {
-    width: 30%;
     background-color: #4aaaa5;
+    padding: 15px 0px;
 }
 
-.navFiller {
-    width: 40%;
-}
 
 .navBar {
-    width: 32%;
-    margin: 0px -10px;
-    padding: 30px 0px 0px 60px;
     background-color: #ffffff;
+    padding: 15px 0px;
     overflow: hidden;
+    text-align: center;
   }
   
-.navBar a {
+.a {
     border-right: 2px solid #dddddd;
 }
 
-/* 
-
-I can't get this to work ...
-
-.navBar a:last-child {
+.a:last-child {
     border-right: 0px #ffffff;
-} */
+}
 
-  .navBar a {
-    width: 32%;
-    float: left;
-    color: #777777;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 0 auto;
-  }
-  
-  .navBar a:hover {
-    background-color: #dddddd;
-    color: black;
-  }
-  
-  .navBar a.active {
-    background-color: #4CAF50;
-    color: white;
-  }
+.navBar a {
+width: 32%;
+float: left;
+color: #777777;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+margin: 0 auto;
+}
+
+.navBar a:hover {
+background-color: #dddddd;
+padding: 1px 0px;
+color: #4aaaa5;
+}
+
+.navBar a:active {
+background-color: #4aaaa5;
+color: white;
+}
+
+
+/* SECTION SPECIFIC */
+
+.section1 {
+    margin-top: 30px;
+    margin-left: 10px;
+    max-width: 600px;
+    min-height: 500px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+}
 
 hr {
     color: #dddddd;
     background-color: #dddddd;
     border: none;
     height: 2px;
-    margin: 20px 30px;
-    padding: ;
-}
-
-.section1 {
-    margin: 50px auto;
-    width: 960px;
-    background-color: #ffffff;
-    border: 1px solid #dddddd;
+    margin: 20px 0px 20px 10px;
+    width: 545px;
 }
 
 .sectionBottom1 {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 h2 {
-    padding: 30px 10px 0px 30px;
+    padding: 30px 10px 0px 10px;
 }
 
 .textBlock1 {
@@ -130,14 +170,6 @@ p {
 
 }
 
-.siteTop {
-    width: 100%;
-    height: 75px;
-    background-color: #ffffff;
-    border-bottom: solid 2px #dddddd;
-    position: fixed;
-}
-
 .siteBottom {
     width: 100%;
     height: 40px;
@@ -147,6 +179,7 @@ p {
     text-align: center;
     font-size: 10px;
     bottom: 0;
+    margin-top: 30px;
     position: fixed;
 }
 
@@ -156,31 +189,75 @@ p {
 }
 
 
-
-/* Begin Portfolio  */
-
-.portfolioImage {
-    padding: 0;
-    margin: 0;
-    overflow: auto;
-}
-
-.portfolioTitle {
-    background-color: #4aaaa5;
-    color: #ffffff;
-    margin: 0 auto;
-    padding: 0px 0px 0px 0px;
-    text-align: center;
-    width: 350px;
-    height: 300px;
-}
-
-/* Begin Contact Form  */
+/* CONTACT CSS */
 
 .formBox {
-    margin: 0 auto;
+    margin-left: 10px;
 }
 
 .formInput {
-    width: 920px;
+    min-height: 25px;
+    width: 540px;
+    margin: 5px 0px;
+    border: 1px solid #dddddd;
 }
+
+.formInput.formMsg {
+    min-height: 100px;
+    width: 540px;
+    margin: 5px 0px;
+    border: 1px solid #dddddd;
+}
+
+.buttonFill {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 10px 30px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+}
+
+/* PORTFOLIO CSS */
+
+
+.portfolioContainer {
+    position: relative;
+    width: 40%;
+  }
+  
+.portfolioImage {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+  
+.portfolioOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background-color: #4aaaa5;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+.portfolioContainer:hover .portfolioOverlay {
+    height: 10%;
+  }
+  
+.portfolioText {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
